@@ -107,6 +107,7 @@ img {
     background: url(./image/Hero.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 223px;
 }
 
 .intro__title {
@@ -253,6 +254,10 @@ img {
 
 /*Places style */
 
+.places {
+    margin-bottom: 131px;
+}
+
 .places-wrap {
     max-width: 1262px;
     margin: 0 auto;
@@ -296,4 +301,74 @@ img {
     color: #006DFE;
     text-decoration: none;
     background: url(./image/svg/Shape.svg) no-repeat right center;
+}
+
+.places__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places__card:hover .places__card-img {
+    transform: scale(1.1);
+}
+
+.places__card-bg {
+    grid-column: span 3;
+}
+
+.places__card-sml {
+    grid-column: span 2;
+}
+
+.places__card-img {
+    width: 100%;
+    transition: 0.2s all;
+}
+
+.places__card-img-bg {
+    height: 100%;
+    object-fit: cover;
+}
+
+.places__card-img-sml {
+    height: 100%;
+    object-fit: cover;
+}
+
+.places__card-title {
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    z-index: 5;
+}
+
+.places__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
 }
