@@ -447,6 +447,7 @@ img {
 
 .topPlaces__card-pic {
     position: relative;
+    margin-bottom: 45px;
 }
 
 .topPlaces__card-stat {
@@ -456,7 +457,7 @@ img {
     align-items: center;
     justify-content: flex-end;
     padding: 16px 25px;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     width: 100%;
     background: rgba(21, 24, 36, 0.6);
@@ -487,4 +488,26 @@ img {
     color: #FFFFFF;
     padding-right: 23px;
     background: url(./image/svg/mess.svg) no-repeat right;
+}
+
+.topPlace__card-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.topPlace__card-btn {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 12px 19px;
+    background: #006DFE;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.topPlace__card-btn:hover,
+.topPlace__card-btn:focus {
+    background: #0562dd;
+    transition: 0.3s;
 }
