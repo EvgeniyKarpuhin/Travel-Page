@@ -438,3 +438,53 @@ img {
 .topPlaces__title {
     margin-bottom: 55px;
 }
+
+.topPlaces__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.topPlaces__card-pic {
+    position: relative;
+}
+
+.topPlaces__card-stat {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+}
+
+.topPlaces__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 auto 0 0;
+}
+
+.topPlaces__card-likes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    background: url(./image/svg/like.svg) no-repeat right;
+    margin-right: 14px;
+}
+
+.topPlaces__card-mess {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 23px;
+    background: url(./image/svg/mess.svg) no-repeat right;
+}
