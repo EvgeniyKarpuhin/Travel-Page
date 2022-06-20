@@ -637,6 +637,19 @@ img {
         background-color: #102746;
         z-index: 15;
         padding: 75px;
+        transform: translateX(100%);
+        transition: .5s all linear;
+    }
+    .header__nav-active {
+        transform: translateX(0);
+    }
+    .header__nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 20;
     }
     .header__item {
         width: 100%;
@@ -649,5 +662,19 @@ img {
     .header__link {
         font-size: 36px;
         line-height: 42px;
+    }
+    .header__nav-clode-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+    }
+    .header__nav-clode-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .header__nav-clode-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
     }
 }
