@@ -771,4 +771,40 @@ img {
     .header__nav {
         padding: 100px 30px;
     }
+    .intro {
+        padding-bottom: 0;
+    }
+    .benefits__title {
+        padding: 40px 15px;
+        font-size: 26px;
+    }
+    .benefits__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .benefits__card {
+        margin-bottom: 50px;
+    }
+    .benefits__card-pic {
+        margin-bottom: 15px;
+    }
+    .benefits__card-title {
+        margin-bottom: 15px;
+    }
+    .benefits__card-desc {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .benefits__card-more {
+        font-size: 14px;
+    }
+    .places {
+        margin-bottom: 65px;
+    }
+    .section-title {
+        font-size: 26px;
+        padding-right: 100px;
+    }
+    .section-title::after {
+        width: 60%;
+    }
 }
