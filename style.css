@@ -146,7 +146,7 @@ img {
 /*Intro style */
 
 .intro {
-    max-height: 100vh;
+    min-height: 100vh;
     background: url(./image/Hero.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -641,10 +641,14 @@ img {
         grid-column-gap: 30px
     }
     .tours {
-        margin-bottom: 70px;
+        margin-bottom: 0;
     }
     .tours__tour {
         grid-column-gap: 40px;
+        margin-bottom: 50px;
+    }
+    .tours__tour:last-child {
+        margin-bottom: 70px;
     }
     .tour__info {
         padding-right: 0;
@@ -765,6 +769,9 @@ img {
     .benefits__cards {
         grid-column: span 3;
     }
+    .benefits__card {
+        margin-bottom: 60px;
+    }
     .section-title {
         margin-bottom: 15px;
     }
@@ -785,6 +792,9 @@ img {
         font-size: 26px;
         bottom: 0;
         left: 10px;
+    }
+    .topPlaces {
+        margin-bottom: 70px;
     }
     .topPlaces__cards {
         grid-template-columns: repeat(2, 1fr);
