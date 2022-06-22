@@ -146,7 +146,7 @@ img {
 /*Intro style */
 
 .intro {
-    min-height: 100vh;
+    max-height: 100vh;
     background: url(./image/Hero.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -684,7 +684,7 @@ img {
         display: block;
     }
     .header__wrapper {
-        padding-top: 30px;
+        padding-top: 20px;
     }
     .header__nav {
         position: fixed;
@@ -759,6 +759,9 @@ img {
     .search-form__submit {
         margin: 0 auto;
     }
+    .benefits__title {
+        transform: none;
+    }
     .benefits__cards {
         grid-column: span 3;
     }
@@ -798,6 +801,9 @@ img {
     .intro {
         padding-bottom: 0;
     }
+    .search-form {
+        padding-bottom: 150px;
+    }
     .benefits__title {
         padding: 40px 15px;
         font-size: 26px;
@@ -822,14 +828,13 @@ img {
         font-size: 14px;
     }
     .places {
-        margin-bottom: 65px;
+        margin-bottom: 80px;
     }
     .section-title {
         font-size: 26px;
-        padding-right: 80px;
     }
     .section-title::after {
-        width: 140px;
+        width: 100px;
     }
     .places__cards {
         grid-template-columns: repeat(1, 1fr);
@@ -849,11 +854,22 @@ img {
         margin-bottom: 0;
     }
     .tours__tour {
-        grid-column-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
         margin-bottom: 30px;
+        grid-column-gap: 0;
     }
     .tours__tour:last-child {
         margin-bottom: 60px;
+    }
+    .tour__pic,
+    .tour__info {
+        grid-column: span 2;
+    }
+    .tour__pic {
+        margin-bottom: 10px;
+    }
+    .tour__pic-mobile {
+        grid-row-start: -1;
     }
     .tour__title {
         font-size: 22px;
@@ -875,26 +891,31 @@ img {
     .topPlaces__cards {
         grid-template-columns: repeat(1, 1fr);
     }
-    .topPlaces__card {
-
-    }
-    /* .topPlaces__card-title {
-        font-size: 14px;
-        line-height: 16px;
-    }
-    .topPlaces__card-likes {
-        font-size: 14px;
-        line-height: 16px;
-        margin-right: 5px;
-    }
     .topPlaces__card-mess {
-        font-size: 14px;
-        line-height: 16px;
-    } */
+        padding-right: 20px;
+    }
     .topPlace__card-text {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .topPlaces__img {
         width: 100%;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .footer__nav {
+        width: 100%;
+    }
+    .footer__menu-title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .footer__menu-link {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
