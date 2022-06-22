@@ -268,7 +268,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 26px;
+    margin: auto 0 26px 0;
 }
 
 .benefits__card-desc {
@@ -740,7 +740,8 @@ img {
         transform: translateY(-50%) rotate(-45deg);
     }
     .intro {
-        padding-top: 130px;
+        padding-top: 150px;
+        min-height: 80vh;
     }
     .intro__title {
         font-size: 36px;
@@ -762,9 +763,7 @@ img {
     }
     .search-form__submit {
         margin: 0 auto;
-    }
-    .benefits__title {
-        transform: none;
+        margin-top: 50px;
     }
     .benefits__cards {
         grid-column: span 3;
@@ -782,7 +781,10 @@ img {
         margin-bottom: 70px;
     }
     .places__caption {
-        margin-bottom: 15px;
+        margin-bottom: 0;
+    }
+    .places__view-all {
+        margin-bottom: 20px;
     }
     .places__card-bg,
     .places__card-sml {
