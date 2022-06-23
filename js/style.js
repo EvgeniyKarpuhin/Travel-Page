@@ -2,7 +2,7 @@
     const header = document.querySelector('.header');
     const headerWrapper = document.querySelector('.header__wrapper');
     window.onscroll = () => {
-        if (window.pageYOffset > 100) {
+        if (window.pageYOffset > 50) {
             header.classList.add('header_active');
             headerWrapper.classList.add('header__wrapper-active');
         } else {
