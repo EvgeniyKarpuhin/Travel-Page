@@ -70,7 +70,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    transition: .7s all;
+    transition: .4s all;
     padding-bottom: 20px;
 }
 
@@ -85,6 +85,12 @@ img {
     align-items: flex-end;
     justify-content: space-between;
     padding-top: 56px;
+    transition: .4s ease;
+    align-items: center;
+}
+
+.header__wrapper-active {
+    padding-top: 20px;
 }
 
 .header__list {
@@ -151,6 +157,7 @@ img {
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
+    margin-bottom: 150px;
 }
 
 .intro__title {
